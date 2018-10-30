@@ -1,0 +1,244 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+
+body{
+	background: #111e26;
+}
+
+.mainHeader{
+	position: absolute;
+	background: url('./images/headerBg.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	background-attachment: fixed;
+}
+
+.headerBackground{
+	background: #000;
+	width: 100%;
+	height: 100vh;
+	opacity: .3;
+}
+
+
+.headerCont{
+	position: absolute;
+	width: 100%;
+	height: 12.1vh;
+	margin-top: 0px;
+	background: transparent;
+	display: flex;
+	z-index: 3;
+}
+
+.headerNav{
+	position: relative;
+	width: 100%;
+	height: 2.7vh;
+	margin-top: 5.3vh;
+	background: transparent;
+	display: flex;
+}
+
+
+
+.headerLogo{
+	position: relative;
+	width: 5.4%;
+	height: 100%;
+	margin-left: 13.25%;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	cursor: pointer;
+}
+
+.navigation{
+	position: relative;
+	display: inline-flex;
+	list-style: none;
+	left: 38.25%;
+	color:#fff;
+	align-items: center;
+}
+.navigation > li{
+	position: relative;
+	font-family: 'Raleway', sans-serif;
+	font-size: 80%;
+    padding-left: 3.2vw;
+}
+
+.navEl{
+transition-duration:0.1s;
+}
+
+.navEl:hover{
+	cursor:pointer;
+	border-bottom: 2px solid #7ddaa5;
+}
+
+.searchbarIcon{
+	position: relative;
+	width: 80%;
+	cursor:pointer;
+	left: -0.2vw;
+	transition-duration:.3s;
+}
+
+.searchbarIcon:hover{
+	-webkit-transform: rotate(-22.5deg);
+    transform: rotate(-22.5deg);
+}
+.centerHeaderCont{
+	position: absolute;
+	background: transparent;
+	margin-top: 38vh;
+	width: 73%;
+	height: 34vh;
+	display: flex;
+	justify-content: center;
+	font-family: 'Raleway', sans-serif;
+	color:#fff;
+	flex-wrap: wrap;
+	overflow-x:hidden;
+	clear: both;
+ 
+}
+
+.headerMainTitle{
+	position: absolute;
+	font-size: 4.6vh;
+	font-weight: 300;	
+	justify-content: center;
+	letter-spacing: 3px;
+}
+
+.boldSpan{
+	position: relative;
+	font-size: 4.6vh;
+	font-weight: 700;
+}
+
+.headerSubTitle{
+	position: absolute;
+	font-size:2.2vh;
+	margin-top: 9vh;
+	justify-content: center;
+}
+
+
+.headerMainBt{
+	position: absolute;
+	background: #00000017;
+	border:2px solid #fff;
+	font-size: 2.2vh;
+	font-weight: 700;
+	color: #bdc3c4;
+	margin-top: 16.8vh;
+	width: auto;
+	height: auto;
+	cursor: pointer;
+	padding-left: 2.65vw;
+	padding-right: 2.65vw;
+	padding-top: 1.6vh;
+	padding-bottom: 1.6vh;
+	border-radius: 30px;
+	outline: none;
+	transition-duration:.3s;
+}
+
+.headerMainBt:hover{
+	background: #fff;
+	color:#000;
+	opacity: .7;
+
+}
+
+.bullets{
+	position: absolute;
+	display: inline-flex;
+	list-style: none;
+	margin-top: 29vh;
+}
+
+.bulEl:nth-child(1){
+	background: #fff;
+}
+
+.bulEl{
+	width: .9vh;
+	height: .9vh;
+	border-radius: 50%;
+	border:1px solid #fff;
+	background: transparent;
+	cursor: pointer;
+	margin-right: 0.3vw;
+	margin-left: 0.3vw;
+}
+
+.bulEl:hover{
+background: #fff;
+}
+
+
+
+.arrows{
+	position: absolute;
+	height: 5.5vh;
+	align-self: center;
+	cursor: pointer;
+}
+
+.arrowLeft{
+	left: 0px;
+}
+
+.arrowRight{
+	right: 0px;
+}
+
+.arrowDown{
+	position: absolute;
+	height: 3.6vh;
+	cursor: pointer;
+	bottom: 5.7vh;
+	-webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+
+
+.aboutCont{
+	position: absolute;
+	display: flex;
+	width: 100%;
+	height: 100vh;
+	background: #fff;
+	margin-top:100vh;
+	justify-content: center;
+}
+
+
+.aboutUsTitle{
+	position: absolute;
+	margin-top: 11vh;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 200px;
+	font-size: 4.6vh;
+	letter-spacing:0.35vw;
+	color: #576671;
+}
+
+
+.aboutUsSub{
+	position: absolute;
+	margin-top: 16vh;
+	font-size: 2.6vh;
+	color: #87949e;
+}
