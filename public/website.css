@@ -1,77 +1,79 @@
 *{
-	margin: 0;
-	padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 
 body{
-	background: #111e26;
+    background: #111e26;
+     font-family: 'Raleway', sans-serif;
 }
 
 .mainHeader{
-	position: absolute;
-	background: url('./images/headerBg.jpg');
-	background-repeat: no-repeat;
-	background-size: cover;
-	width: 100%;
-	height: 100vh;
-	display: flex;
-	justify-content: center;
-	background-attachment: fixed;
+    position: absolute;
+    background: url('./images/headerBg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-attachment: fixed;
 }
 
 .headerBackground{
-	background: #000;
-	width: 100%;
-	height: 100vh;
-	opacity: .3;
+    background: #000;
+    width: 100%;
+    height: 100vh;
+    opacity: .3;
 }
 
 
 .headerCont{
-	position: absolute;
-	width: 100%;
-	height: 12.1vh;
-	margin-top: 0px;
-	background: transparent;
-	display: flex;
-	z-index: 3;
+    position: absolute;
+    width: 100%;
+    height: 12.1vh;
+    margin-top: 0px;
+    background: transparent;
+    display: flex;
+    z-index: 3;
 }
 
 .headerNav{
-	position: relative;
-	width: 100%;
-	height: 2.7vh;
-	margin-top: 5.3vh;
-	background: transparent;
-	display: flex;
+    position: relative;
+    width: 100%;
+    height: 2.7vh;
+    margin-top: 5.3vh;
+    background: transparent;
+    display: flex;
 }
 
 
 
 .headerLogo{
-	position: relative;
-	width: 5.4%;
-	height: 100%;
-	margin-left: 13.25%;
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	cursor: pointer;
+    position: relative;
+    width: 5.4%;
+    height: 100%;
+    margin-left: 13.25%;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    cursor: pointer;
 }
 
 .navigation{
-	position: relative;
-	display: inline-flex;
-	list-style: none;
-	left: 38.25%;
-	color:#fff;
-	align-items: center;
+    position: relative;
+    display: inline-flex;
+    list-style: none;
+    left: 38.25%;
+    color:#fff;
+    align-items: center;
+    max-width: 50vw;
 }
 .navigation > li{
-	position: relative;
-	font-family: 'Raleway', sans-serif;
-	font-size: 80%;
+    position: relative;
+    font-family: 'Raleway', sans-serif;
+    font-size: 80%;
     padding-left: 3.2vw;
 }
 
@@ -80,107 +82,108 @@ transition-duration:0.1s;
 }
 
 .navEl:hover{
-	cursor:pointer;
-	border-bottom: 2px solid #7ddaa5;
+    cursor:pointer;
+    border-bottom: 2px solid #7ddaa5;
 }
 
 .searchbarIcon{
-	position: relative;
-	width: 80%;
-	cursor:pointer;
-	left: -0.2vw;
-	transition-duration:.3s;
+    position: relative;
+    width: 80%;
+    cursor:pointer;
+    left: -0.2vw;
+    transition-duration:.3s;
 }
 
 .searchbarIcon:hover{
-	-webkit-transform: rotate(-22.5deg);
+    -webkit-transform: rotate(-22.5deg);
     transform: rotate(-22.5deg);
 }
 .centerHeaderCont{
-	position: absolute;
-	background: transparent;
-	margin-top: 38vh;
-	width: 73%;
-	height: 34vh;
-	display: flex;
-	justify-content: center;
-	font-family: 'Raleway', sans-serif;
-	color:#fff;
-	flex-wrap: wrap;
-	overflow-x:hidden;
-	clear: both;
+    position: absolute;
+    background: transparent;
+    margin-top: 38vh;
+    width: 73%;
+    height: 34vh;
+    display: flex;
+    justify-content: center;
+    font-family: 'Raleway', sans-serif;
+    color:#fff;
+    flex-wrap: wrap;
+    overflow-x:hidden;
+    clear: both;
  
 }
 
 .headerMainTitle{
-	position: absolute;
-	font-size: 4.6vh;
-	font-weight: 300;	
-	justify-content: center;
-	letter-spacing: 3px;
+    position: absolute;
+    font-size: 4.6vh;
+    font-weight: 300;   
+    justify-content: center;
+    letter-spacing: 3px;
 }
 
 .boldSpan{
-	position: relative;
-	font-size: 4.6vh;
-	font-weight: 700;
+    position: relative;
+    font-size: 4.6vh;
+    font-weight: 700;
 }
 
 .headerSubTitle{
-	position: absolute;
-	font-size:2.2vh;
-	margin-top: 9vh;
-	justify-content: center;
+    position: absolute;
+    font-size:2.2vh;
+    margin-top: 9vh;
+    letter-spacing: 1px;
+    justify-content: center;
 }
 
 
 .headerMainBt{
-	position: absolute;
-	background: #00000017;
-	border:2px solid #fff;
-	font-size: 2.2vh;
-	font-weight: 700;
-	color: #bdc3c4;
-	margin-top: 16.8vh;
-	width: auto;
-	height: auto;
-	cursor: pointer;
-	padding-left: 2.65vw;
-	padding-right: 2.65vw;
-	padding-top: 1.6vh;
-	padding-bottom: 1.6vh;
-	border-radius: 30px;
-	outline: none;
-	transition-duration:.3s;
+    position: absolute;
+    background: #00000017;
+    border:2px solid #fff;
+    font-size: 2.2vh;
+    font-weight: 700;
+    color: #fff;
+    margin-top: 16.8vh;
+    width: auto;
+    height: auto;
+    cursor: pointer;
+    padding-left: 2.65vw;
+    padding-right: 2.65vw;
+    padding-top: 1.6vh;
+    padding-bottom: 1.6vh;
+    border-radius: 30px;
+    outline: none;
+    transition-duration:.3s;
 }
 
 .headerMainBt:hover{
-	background: #fff;
-	color:#000;
-	opacity: .7;
+    background: #fff;
+    color:#000;
+    opacity: .7;
 
 }
 
 .bullets{
-	position: absolute;
-	display: inline-flex;
-	list-style: none;
-	margin-top: 29vh;
+    position: absolute;
+    display: inline-flex;
+    list-style: none;
+    margin-top: 29vh;
 }
 
 .bulEl:nth-child(1){
-	background: #fff;
+    background: #fff;
 }
 
 .bulEl{
-	width: .9vh;
-	height: .9vh;
-	border-radius: 50%;
-	border:1px solid #fff;
-	background: transparent;
-	cursor: pointer;
-	margin-right: 0.3vw;
-	margin-left: 0.3vw;
+    width: .9vh;
+    height: .9vh;
+    border-radius: 50%;
+    border:1px solid #fff;
+    background: transparent;
+    cursor: pointer;
+    margin-right: 0.3vw;
+    margin-left: 0.3vw;
 }
 
 .bulEl:hover{
@@ -190,55 +193,373 @@ background: #fff;
 
 
 .arrows{
-	position: absolute;
-	height: 5.5vh;
-	align-self: center;
-	cursor: pointer;
+    position: absolute;
+    height: 5.5vh;
+    align-self: center;
+    cursor: pointer;
+    margin-top:-10vh;
 }
 
 .arrowLeft{
-	left: 0px;
+    left: 0px;
 }
 
 .arrowRight{
-	right: 0px;
+    right: 0px;
 }
 
 .arrowDown{
-	position: absolute;
-	height: 3.6vh;
-	cursor: pointer;
-	bottom: 5.7vh;
-	-webkit-transform: rotate(-90deg);
+    position: absolute;
+    height: 3.6vh;
+    cursor: pointer;
+    bottom: 5.7vh;
+    -webkit-transform: rotate(-90deg);
     transform: rotate(-90deg);
 }
 
 
 .aboutCont{
-	position: absolute;
-	display: flex;
-	width: 100%;
-	height: 100vh;
-	background: #fff;
-	margin-top:100vh;
-	justify-content: center;
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+    margin-top:100vh;
+    justify-content: center;
 }
 
 
 .aboutUsTitle{
-	position: absolute;
-	margin-top: 11vh;
-	font-family: 'Raleway', sans-serif;
-	font-weight: 200px;
-	font-size: 4.6vh;
-	letter-spacing:0.35vw;
-	color: #576671;
+    position: absolute;
+    margin-top: 9vh;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200px;
+    font-size: 4.6vh;
+    letter-spacing:0.35vw;
+    color: #576671;
 }
 
 
+.greenLine{
+    position: absolute;
+    margin-top: 16.8vh;
+    width: 1.5%;
+    height: 1.5px;
+    background: #17daa3;
+}
+
 .aboutUsSub{
-	position: absolute;
-	margin-top: 16vh;
-	font-size: 2.6vh;
-	color: #87949e;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing:0.1vw;
+    font-size: 2.6vh;
+    position: absolute;
+    margin-top: 20vh;
+    color: #87949e;
+}
+
+
+.aboutIconsCont{
+    position: absolute;
+    margin-top: 30vh;
+    width: 71%;
+    height: 40vh;
+    display: flex;
+}
+
+.aboutIcons{
+    position: relative;
+    display: flex;
+    width: 25%;
+    height: 100%;
+    background: transparent;
+    justify-content: center;
+    text-align: center;
+}
+
+.aboutRound{
+    position: absolute;
+    display: flex;
+    width: calc(7vw + 26px);
+    height: calc(7vw + 26px);
+    background: #edeff1;
+    border-radius:50%;
+    cursor: pointer;
+    transition-duration:.3s;
+    justify-content: center;
+}
+
+.aboutRound:hover{
+    background: #17daa3;
+}
+
+.aboutIcon{
+    position: absolute;
+    align-self: center;
+    width: 3vw;
+    height: 3vw;
+}
+
+.aboutRound2{
+    background: #17daa3;
+}
+
+.aboutIconsHeader{
+    position: absolute;
+    color: #000;
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.2vh;
+    font-weight: 600;
+    margin-top: 25vh;
+}
+
+.aboutIconContent{
+    position: absolute;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.6vh;
+    font-weight: 500;
+    color: #a5aeb6;
+    margin-top: 31vh;
+    max-width: 14.6vw;
+
+}
+
+
+
+.aboutBt{
+    position: absolute;
+    margin-top: 88vh;
+    background: #17daa3;
+    color:#fff;
+    border:2px solid #17daa3;
+}
+
+.aboutBt:hover{
+    background:transparent;
+    color:#000;
+}
+
+.moreInfoCont{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+    margin-top:200vh;
+    justify-content: center;
+}
+
+.moreInfoSubCont{
+    position: absolute;
+    background: transparent;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+}
+
+.moreInfoSubCont1{
+    background: #fff;
+    background: #f9f9fa;
+}
+.moreInfoSubCont2{
+    margin-top: 50vh;
+    background: #fff;
+}
+
+
+.moreInfoImage1{
+    background: url('https://avatanplus.com/files/resources/mid/5ab267ee1dcf716248e5fa2a.png');
+    background-size: 35%;
+    align-self: center;
+    position: absolute;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 50vh;
+    display: flex;
+}
+
+.moreInfoImage2{
+    background: url('https://support.apple.com/content/dam/edam/applecare/images/en_US/macos/highsierra/psp-mini-hero-upgrade-macos-high-sierra_2x.png');
+    background-size: 80%;
+    right: 0px;
+    position: absolute;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 50vh;
+    display: flex;
+}
+
+.moreInfo{
+    position: absolute;
+    display: flex;
+    align-self: center;
+    margin-right: 0px;
+    background: transparent;
+    width: 35.5%;
+    height: 35.5vh;
+}
+
+.moreInfo1{
+    right:13.3vw;
+}
+
+.moreInfo2{
+    left:13.3vw;
+}
+
+.moreInfoHeader{
+    color:#576671;
+    font-size: 4.6vh;
+    font-weight: 200;
+    letter-spacing: 3px;
+}
+
+.moreInfoContent{
+    position: absolute;
+    font-weight: 400;
+    font-size: 2vh;
+    line-height: 3.5vh;
+    align-self: center;
+    color: #87949e;
+}
+
+.moreInfoBt{
+    bottom:0px;
+}
+
+.sliderCont{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+    margin-top:300vh;
+}
+
+.slider{
+    position: relative;
+    display: inline-flex;
+    width: 100%;
+    height: 100%;
+}
+.slideLi{
+    list-style: none;
+    position: relative;
+    width: 100%;
+    height:100%;
+}
+
+.mainSlide{
+    position: relative;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height:100%;
+}
+
+.onSliderBlock{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    margin-top: 367vh;
+    background: #f9f9fa;
+}
+
+.sliderMainTitle{
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1125px) {
+ .headerLogo{
+    width: 7%;
+}
+
+ .navigation > li{
+    font-size: 75%;
+    padding-left: 3vw;
+}
+
+.aboutRound{
+    width: calc(9vw + 26px);
+    height: calc(9vw + 26px);
+}
+
+}
+
+
+@media screen and (max-width: 1000px) {
+  .headerLogo{
+    width: 7.2%;
+}
+
+
+ .navigation > li{
+    font-size: 70%;
+    padding-left: 2.8vw;
+}
+
+
+.centerHeaderCont{
+    width: 85%;
+}
+
+.headerMainTitle{
+    font-size: 4.2vh;
+}
+
+.boldSpan{
+    font-size: 4.2vh;
+}
+
+.headerSubTitle{
+    font-size:1.8vh;
+    margin-top: 8vh;
+}
+
+
+.headerMainBt{
+    font-size: 2vh;
+    margin-top: 17vh;
+} 
+
+
+
+.arrowDown{
+    height: 4vh;
+}
+
+
+
+.aboutRound{
+    width: calc(9.2vw + 26px);
+    height: calc(9.2vw + 26px);
+}
+
+.aboutIconContent{
+    font-size: 1.7vh;
+    margin-top: 28vh;
+    max-width: 15.6vw;
+
+}
+
+.aboutIconsHeader{
+    font-size: 2.3vh;
+    margin-top: 22vh;
+}
+
+.aboutBt{
+    margin-top: 85.8vh;
+}
+
+
+
 }
