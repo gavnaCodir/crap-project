@@ -11,7 +11,7 @@ app.use(express.static(__dirname + '/public'));
 
 app.post('/',urlencodedParser,(req,res)=>{
 	var emailOutput=`
-	<h2>New data from new costummer</h2>
+	<h2>New data from new client</h2>
 	<ol>
 		<li>Name: ${req.body.Name}</li>
 		<li>Email: ${req.body.Email}</li>
@@ -28,21 +28,21 @@ app.post('/',urlencodedParser,(req,res)=>{
         port: 465,
         secure: true, // true for 465, false for other ports
         auth: {
-            user: 'testnodemailermark@gmail.com', r
+            user: 'testnodemailermark@gmail.com', 
             pass: 'asdfghjkl_12345' 
         },
         tls:{
-        	rejectUnauthorized:false
+        	rejectUnauthorized:false//localhost
         }
     });
 
     // setup email data with unicode symbols
     let mailOptions = {
-        from: '"Best website" <testnodemailermark@gmail.com', // sender address
+        from: `"Shity website" <${req.body.Email}`, // sender address
         to: 'testnodemailermark@gmail.com', // list of receivers
         subject: 'Hello ✔', // Subject line
-        text: 'Hello world?', // plain text body
-        html: emailOutput // html body
+        text: 'Hello world?', 
+        html: emailOutput 
     };
 
     //     let mailOptions2 = {

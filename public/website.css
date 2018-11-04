@@ -937,7 +937,7 @@ background: #fff;
     align-items: center;
     width: 100%;
     height: 75.5vh;
-    background: #240939;
+    background: ##1d3234 ; /*  240939*/
 }
 
 .mapMainContentCont{
@@ -979,30 +979,38 @@ background: #fff;
 
 
 .callBackformCont{
+    background: url('./images/headerBg.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     position: absolute;
     display: flex;
+    justify-content: center;
     align-items: center;
     margin-top:  748.5vh;
     height: 60vh;
     width:100%;
-    background: #24093940;
-
 }
 
 .callBackform{
     position: absolute;
-    min-height:40vh;
+    min-height:50vh;
     height:auto;
-    width: 30%;
-    background: transparent;
+    width: 26%;
+    background: #040404a6;
+    padding: 1vw;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
     /*margin-top: 10vh;*/
-    left:13.3vw;
+   /* left:13.3vw;*/
 }
 
 
 .callBackTitle{
     color: #c3c1cc;
-    font-size: 2.8vh;
+    font-size: 2.4vh;
     font-weight: 300;
     letter-spacing: 1px;
 }
@@ -1010,7 +1018,7 @@ background: #fff;
 
 .dataInput{
     position: absolute;
-    width: 20vw;
+    width: 80%;
     background:transparent;
     border:2px solid #fff;
     color: #fff;
@@ -1025,20 +1033,25 @@ background: #fff;
        
 }
 
+
+.nameInput{
+    margin-top: 4vh;
+}
+
+
 .emailInput{
-    margin-top: 8vh;
+    margin-top: 10vh;
 }
 
 .phoneInput{
-    margin-top: 14vh;
+    margin-top: 16vh;
 }
 
 
 .textArea{
-    margin-top: 20vh;
+    margin-top: 22vh;
     resize: none;
     height: 8vh;
-    /*border:2px solid #fff;*/
 }
 
 .textArea::-webkit-scrollbar {
@@ -1069,14 +1082,15 @@ background:#009d71 ;
     padding-bottom: 0.6vh;
     font-size: 2.6vh;
     border-radius: 5px;
-    bottom: 0vh;
+    bottom: 12vh;
+    left:10%;   
 }
 
 .emaliSent{
     position: absolute;
     color:#fff;
     bottom: 4vh;
-    left:13.3vw;
+    left:10%;
 }
 
 .footerNav{

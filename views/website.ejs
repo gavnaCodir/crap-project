@@ -289,13 +289,14 @@
 <div class="callBackformCont">
 		<form class="callBackform" method="POST" action="/">	
 		<div class="callBackTitle">Fill out the form and we will contact you</div>			
-			<input type="text" class="dataInput nameInput" name="Name" placeholder="Name">
-			<input type="email" class="dataInput emailInput" name="Email" placeholder="Email">
-			<input type="tel" class="dataInput phoneInput" name="Phone" placeholder="Phone number">
-			<textarea class="dataInput textArea"    name="Message" placeholder="Send us a message"></textarea>
+			<input type="text" class="dataInput nameInput" name="Name" placeholder="Name" required>
+			<input type="email" class="dataInput emailInput" name="Email" placeholder="Email" required>
+			<input type="tel" class="dataInput phoneInput" name="Phone" placeholder="Phone number" required>
+			<textarea class="dataInput textArea"    name="Message" placeholder="Send us a message" required></textarea>
 			<button type="submit" class="moreInfoBt  headerMainBt aboutBt mapBt sendBt">Send</button>
+			<div class="emaliSent"><%=data%></div>
 		</form>
-		<div class="emaliSent"><%=data%></div>
+		
 			
 	<!-- <nav class="headerNav footerNav">
 	<ul class="navigation ">
