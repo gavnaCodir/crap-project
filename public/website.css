@@ -252,7 +252,7 @@ background: #fff;
     margin-top: 16.8vh;
     width: 1.5%;
     height: 1.5px;
-    background: #17daa3;
+    background: #15be90;
 }
 
 .aboutUsSub{
@@ -288,7 +288,7 @@ background: #fff;
     display: flex;
     width: calc(7vw + 26px);
     height: calc(7vw + 26px);
-    background: #edeff1;
+    background: #284556;
     border-radius:50%;
     cursor: pointer;
     transition-duration:.3s;
@@ -296,7 +296,7 @@ background: #fff;
 }
 
 .aboutRound:hover{
-    background: #17daa3;
+    background: #15be90;
 }
 
 .aboutIcon{
@@ -306,9 +306,6 @@ background: #fff;
     height: 3vw;
 }
 
-.aboutRound2{
-    background: #17daa3;
-}
 
 .aboutIconsHeader{
     position: absolute;
@@ -335,9 +332,9 @@ background: #fff;
 .aboutBt{
     position: absolute;
     margin-top: 88vh;
-    background: #17daa3;
+    background: #15be90f2;
     color:#fff;
-    border:2px solid #17daa3;
+    border:2px solid #15be90f2;
 }
 
 .aboutBt:hover{
@@ -366,12 +363,11 @@ background: #fff;
 }
 
 .moreInfoSubCont1{
-    background: #fff;
-    background: #f9f9fa;
+    background: #263b47;
 }
 .moreInfoSubCont2{
     margin-top: 50vh;
-    background: #fff;
+    background: #314d5d;
 }
 
 
@@ -416,7 +412,7 @@ background: #fff;
 }
 
 .moreInfoHeader{
-    color:#576671;
+    color:#cecece;
     font-size: 4.6vh;
     font-weight: 200;
     letter-spacing: 3px;
@@ -433,6 +429,11 @@ background: #fff;
 
 .moreInfoBt{
     bottom:0px;
+}
+
+.moreInfoBt:hover{
+    color:#fff;
+    opacity: 1;
 }
 
 
@@ -608,9 +609,13 @@ background: #fff;
     margin-top:367vh;
     height: 100vh;
     width: 100%;
-    background: #f9f9fa;
+    background: #263b47;
     display: flex;
     justify-content: center;
+}
+
+.servicesTitle{
+    color: #cecece;
 }
 
 .servicesGreenLine{
@@ -657,7 +662,7 @@ background: #fff;
     display: flex;
     width: 4.6vw;
     height: 4.6vw;
-    background: #fff;
+    background: #263b47;
     border-radius:50%;
     cursor: pointer;
     justify-content: center;
@@ -670,16 +675,12 @@ background: #fff;
     height: 1.7vw;
 }
 
-.developmentIcon{
-    width:4.6vw;
-    height: 4.6vw;
-}
 
 .serviceInfoTitle{
     position: absolute;
     font-size: 4.4vh;
     font-weight: 200;
-    color: #576671;
+    color: #cecece;
     margin-left: 7.1vw;
 }
 
@@ -711,12 +712,13 @@ background: #fff;
     justify-content: center;
     width: 100%;
     height: 110vh;
-    background: #fff;
+    background: #111e26;
 }
 
 .teamTitle{
     font-weight: 300;
     letter-spacing: 2px;
+    color:#cecece;
 }
 
 .teamCont{
@@ -743,19 +745,19 @@ background: #fff;
 
 
 .teamBlockDiffBg0{
-    background-color: #e4e4e4;
+    background-color: #263b47;
 }
 
 .teamBlockDiffBg1{
-    background-color: #f9f9fa;
+    background-color: #0f191f;
     }
     
 .teamBlockDiffBg2{
-    background-color: #efefef;
+    background-color: #0f191f;
 }
 
 .teamBlockDiffBg3{
-    background-color: #2dddac;
+    background-color: #15be90;
 }
 
 .teamBlockIcon{
@@ -801,8 +803,13 @@ background: #fff;
     justify-content: center;
     width: 100%;
     height: 100vh;
-    background: #f9f9fa;
+    background: #263b47;
 }
+
+.pricingTitle{
+    color:#cecece;
+}
+
 
 .pricingCont{
     position: absolute;
@@ -838,7 +845,7 @@ background: #fff;
     width: 100%;
     height: 35.7%;
     background: transparent;
-    border:1px solid #eeeff1;
+    border:1px solid #c3c3c3;
     border-top: 0px ;
     border-left: 0px ;
     border-right: 0px ;
@@ -900,7 +907,7 @@ background: #fff;
     align-items: center;
     width: 100%;
     height:7vh;
-    background: #2dddac;
+    background: #15be90;
     outline:none;
     border-style: none;
     cursor: pointer;
@@ -937,7 +944,7 @@ background: #fff;
     align-items: center;
     width: 100%;
     height: 75.5vh;
-    background: ##1d3234 ; /*  240939*/
+    background: #111e26 ; /*  240939*/
 }
 
 .mapMainContentCont{
