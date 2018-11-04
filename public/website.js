@@ -1,3 +1,4 @@
+(function() {
 function q(element){return  document.querySelector(element)};
 let leftArr = q('.arrowSlide1'),
 rightArr = q('.arrowSlide2'),
@@ -7,7 +8,11 @@ navHome = q('.navHome'),
 navAbout = q('.navAbout'),
 navServ = q('.navServ'),
 navTeam = q('.navTeam'),
-navPrice = q('.navPrice');
+navPrice = q('.navPrice'),
+headerMainBt = q('.headerMainBt'),
+aboutBt = q('.aboutBt'),
+moreInfoBt = q('.moreInfoBt'),
+moreInfoBt2 = q('.moreInfoBt2');
 
 
 
@@ -29,9 +34,13 @@ slider.style.left = l + '%';
 
 navHome.addEventListener('click',()=>scrollFun(0));
 navAbout.addEventListener('click',()=>scrollFun(1));
+headerMainBt.addEventListener('click',()=>scrollFun(1));
 navServ.addEventListener('click',()=>scrollFun(3.67));
+moreInfoBt.addEventListener('click',()=>scrollFun(3.67));
+moreInfoBt2.addEventListener('click',()=>scrollFun(3.67));
 navTeam.addEventListener('click',()=>scrollFun(4.67));
-navPrice.addEventListener('click',()=>scrollFun(5.77))
+aboutBt.addEventListener('click',()=>scrollFun(5.77));
+navPrice.addEventListener('click',()=>scrollFun(5.77));
 
 var scrollFun = (num)=>{
 window.scrollTo({
@@ -40,7 +49,7 @@ window.scrollTo({
 });
 }
 
-
+})();
 // var arr = [6,4,8,2,10,14,12]
 
 
