@@ -9,6 +9,9 @@
   "author": "mark batin",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.16.4"
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "nodemailer": "^4.6.8"
   }
 }

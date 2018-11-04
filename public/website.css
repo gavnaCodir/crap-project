@@ -791,7 +791,7 @@ background: #fff;
 }
 
 .teamBlockIconGreenBg{
-    color: #6c7073;
+    color: #f9f9fa;
 }
 
 .pricingMainCont{
@@ -822,6 +822,10 @@ background: #fff;
     box-sizing: border-box;
     background: #fff;
     border-radius: 3px;
+    -webkit-box-shadow: 0px 1px 10px -4px rgba(102,102,102,1);
+    -moz-box-shadow: 0px 1px 10px -4px rgba(102,102,102,1);
+    box-shadow: 0px 1px 10px -4px rgba(102,102,102,1);
+
 }
 
 .pricingBlockHeader{
@@ -907,6 +911,9 @@ background: #fff;
     letter-spacing: 3px;
     padding-left: 1.85vw;
     transition-duration: .3s;
+    -webkit-box-shadow: 0px 1px 10px -4px rgba(102,102,102,1);
+    -moz-box-shadow: 0px 1px 10px -4px rgba(102,102,102,1);
+    box-shadow: 0px 1px 10px -4px rgba(102,102,102,1);
 }
 
 .pricingBlockMainBt:hover{
@@ -971,16 +978,113 @@ background: #fff;
 }
 
 
-.callBackform{
+.callBackformCont{
     position: absolute;
     display: flex;
-    justify-content: center;
-    margin-top:  752.5vh;
-    height: 24.5vh;
+    align-items: center;
+    margin-top:  748.5vh;
+    height: 60vh;
     width:100%;
-    background: #240939;
+    background: #24093940;
 
 }
+
+.callBackform{
+    position: absolute;
+    min-height:40vh;
+    height:auto;
+    width: 30%;
+    background: transparent;
+    /*margin-top: 10vh;*/
+    left:13.3vw;
+}
+
+
+.callBackTitle{
+    color: #c3c1cc;
+    font-size: 2.8vh;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+
+.dataInput{
+    position: absolute;
+    width: 20vw;
+    background:transparent;
+    border:2px solid #fff;
+    color: #fff;
+    font-size: 2.3vh;
+    outline: none;
+    border-radius: 0px;
+    padding:0.3vw;
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 0px;
+    margin-top: 2vh;
+       
+}
+
+.emailInput{
+    margin-top: 8vh;
+}
+
+.phoneInput{
+    margin-top: 14vh;
+}
+
+
+.textArea{
+    margin-top: 20vh;
+    resize: none;
+    height: 8vh;
+    /*border:2px solid #fff;*/
+}
+
+.textArea::-webkit-scrollbar {
+width: 0.6vw;  
+height: 1vh; 
+}
+
+.textArea::-webkit-scrollbar-track {
+background: transparent;
+}
+
+.textArea::-webkit-scrollbar-thumb {
+background:#17daa3 ;
+}
+
+.textArea::-webkit-scrollbar-thumb:hover {
+background:#009d71 ;
+
+}
+
+
+
+.sendBt{
+    position: absolute;
+    padding-left: 1.6vw;
+    padding-right: 1.6vw;
+    padding-top: 0.6vh;
+    padding-bottom: 0.6vh;
+    font-size: 2.6vh;
+    border-radius: 5px;
+    bottom: 0vh;
+}
+
+.emaliSent{
+    position: absolute;
+    color:#fff;
+    bottom: 4vh;
+    left:13.3vw;
+}
+
+.footerNav{
+    position: relative;
+    bottom:2vh;
+    /*left:-13.3vw;*/
+}
+
 
 @media screen and (max-width: 1125px) {
  .headerLogo{
