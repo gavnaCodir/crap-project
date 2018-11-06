@@ -1053,7 +1053,15 @@ background: #fff;
 .phoneInput{
     margin-top: 16vh;
 }
+.invalidClass{
+    border-color: #980505;
+    transition-duration: .2s;
+}
 
+.validClass{
+    border-color: #00c793;
+    transition-duration: .2s;
+}
 
 .textArea{
     margin-top: 22vh;
