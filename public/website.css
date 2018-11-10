@@ -173,9 +173,14 @@ transition-duration:0.1s;
     margin-top: 29vh;
 }
 
-.bulEl:nth-child(1){
-    background: #fff;
+.bulElFilled{
+background: #fff;
 }
+
+
+/*.bulEl:nth-child(1){
+    background: #fff;
+}*/
 
 .bulEl{
     width: .9vh;

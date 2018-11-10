@@ -2,8 +2,8 @@
 function q(element){return  document.querySelector(element)};
 let leftArr = q('.arrowSlide1'),
 rightArr = q('.arrowSlide2'),
-slider = q('.slider'),
-bullets = q('.bullets');
+slider = q('.slider')
+bulEl = q('.bulEl');
 
 
 //slider without animation
@@ -19,6 +19,9 @@ n();
 page>4?page=0:page<0?page=4:page;
 let l = page * -100;
 slider.style.left = l + '%';
+console.log(page)
+
+ bulEl.classList.add('bulElFilled');
 
 };
 
@@ -65,7 +68,7 @@ let invalidFornmColorFun = (elem,ev) =>{
 
 var nameRegEx =  /^[A-Za-z '\-]{2,20}$/;
 var emailRegEx =/^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,10}))$/;
-var phoneRegEx = /^(?=.*?[1-9])[0-9()-]{3,25}$/;
+var phoneRegEx = /^(?=.*?[1-9])[0-9()--+]{3,25}$/;
 
 
 let inputValidation = (elem,regEx)=>{
