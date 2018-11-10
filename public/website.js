@@ -64,8 +64,8 @@ let invalidFornmColorFun = (elem,ev) =>{
 
 
 var nameRegEx =  /^[A-Za-z '\-]{2,20}$/;
-var emailRegEx =/^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-var phoneRegEx = /^(?=.*?[1-9])[0-9()-]+$/;
+var emailRegEx =/^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,10}))$/;
+var phoneRegEx = /^(?=.*?[1-9])[0-9()-]{3,25}$/;
 
 
 let inputValidation = (elem,regEx)=>{
@@ -90,9 +90,9 @@ phoneInput.addEventListener('keyup',()=>inputValidation(phoneInput,phoneRegEx));
 
 
 let preventFormValidationFun = e =>{
-	if(!nameInput.value)invalidFornmColorFun(nameInput,e);
-	if(!emailInput.value)invalidFornmColorFun(emailInput,e);
-	if(!phoneInput.value)invalidFornmColorFun(phoneInput,e);
+	if(!nameInput.value  || !nameInput.value.match(nameRegEx))invalidFornmColorFun(nameInput,e);
+	if(!emailInput.value || !emailInput.value.match(emailRegEx))invalidFornmColorFun(emailInput,e);
+	if(!phoneInput.value || !phoneInput.value.match(phoneRegEx))invalidFornmColorFun(phoneInput,e);
 
 };
 
@@ -100,16 +100,40 @@ callBackform.addEventListener('submit',preventFormValidationFun);
 
 
 })();
-// var arr = [6,4,8,2,10,14,12]
+
+
+//array sorting
+// var arr = [6,4,8,2,10,14,12];
+// var arr2 = [5,4,13,40,9,54,44,33,12,47,7];
+// var arr3 = [45,44,22,21,20,14,13,12,11,9,7];
 
 
 // var arrSort = (array) => {
 
+// 	console.log(`before ${array}`)
+// 	for(let i= 0;i<array.length;i++){
+// 		let f = i+1;
 
-// for(let i= 0;i<array.length;i++){
+// 		for(let j= 0;j<array.length;j++){
+// 			if(array[j]>array[f]){
 
-// }
+// 				var a = array[j], 
+// 					b = array[f];
+// 					array[f] = a;
+// 					array[j] = b;
+// 			}
+// 		}
+
+// 		// if(array[i]%2===0){
+// 		// 	console.log(array[i])
+// 		// }
+// 	}
+// 	console.log(`after ${array}`)
+// 	console.log('-----------------------------------------------')
 // }
 
 // arrSort(arr)
+// arrSort(arr2)
+// arrSort(arr3)
+
 
