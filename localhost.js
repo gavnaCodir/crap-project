@@ -2,7 +2,8 @@ const express = require('express');
 const app = express();
 const bodyParser = require('body-parser')
 const nodemailer = require('nodemailer');
-const port = 8080;
+const PORT = process.env.PORT || 5000;
+
 
 const urlencodedParser = bodyParser.urlencoded({ extended: false });
 app.set('view engine', 'ejs');
@@ -69,5 +70,5 @@ app.get('/',(req,res)=>{
 	res.sendFile(__dirname +'/public/website.html')
 })
 
-app.listen(port,()=>console.log(`listening to ${port}`));
+app.listen(PORT,()=>console.log(`listening to ${PORT}`));
 
